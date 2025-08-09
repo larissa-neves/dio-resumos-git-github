@@ -1,47 +1,28 @@
-# Criando e Clonando Repositórios
+# 🚀 Criando e Clonando Repositórios com Git
 
-Resumo dos conteúdos apresentados na aula Criando e Clonando Repositórios do curso Versionamento de Código com Git e Github da [Digital Innovation One](https://www.dio.me).
+Resumo da aula **"Criando e Clonando Repositórios"** do curso _Versionamento de Código com Git e GitHub_ da [Digital Innovation One](https://www.dio.me).
 
-## Duas Formas de obter um Repositório
-1 - Transformar um repositório local que não está sob controle de versão em um repositório Git.
+## 📦 Formas de Obter um Repositório Git
 
-2 - Clonar um repositório Git já existente.
+Você pode iniciar um projeto com Git de duas maneiras:
 
-## 💻 Comandos
-- Criando um diretório
+1. **Inicializar um repositório local**  
+   Transformar uma pasta comum em um repositório Git.
 
-```
-$ mkdir resumos
-```
+2. **Clonar um repositório existente**  
+   Copiar um repositório remoto para sua máquina local.
 
-- Transformando a pasta em um repositório Git.
+## 💻 Principais Comandos Utilizados
 
-```
-$ git init resumos
-```
+| Ação                                 | Comando                                                                                    |
+| ------------------------------------ | ------------------------------------------------------------------------------------------ |
+| Criar um diretório                   | `mkdir resumos`                                                                            |
+| Inicializar repositório Git          | `git init resumos`                                                                         |
+| Acessar diretório                    | `cd <diretório>`                                                                           |
+| Exibir conteúdo de arquivo           | `cat <arquivo>`                                                                            |
+| Conectar repositório local ao remoto | `git remote add origin <URL do repositório>`                                               |
+| Clonar uma branch específica         | `git clone <URL> --branch <branch> --single-branch`<br>`git clone --branch <branch> <URL>` |
 
-- Exibir conteúdo 
+---
 
-```
-$ cat <arquivo>
-```
-
-- Entrar em um diretório
-
-```
-$ cd <diretório>
-```
-
-- Conectar um repositório local à um repositório remoto
-
-```
-$ git remote add origin <link repositório>
-```
-
-- Clonar uma *branch* específica (duas maneiras)
-
-```
-$ git clone <remote-repo-url> --branch <branchname> --single-branch
-
-$ git clone --branch <branchname> <remote-repo-url>
-```
+✨ _Dica:_ Use `git status` para verificar o estado atual do repositório e `git log` para visualizar o histórico de commits.
